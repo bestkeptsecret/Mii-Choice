@@ -1,0 +1,67 @@
+<html>
+<head>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KZKDQLZ');</script>
+<!-- End Google Tag Manager -->
+
+<title>{$mybb->settings['bbname']}</title>
+{$headerinclude}
+
+<meta name="description" content="UK politics forum for British, English, Scottish, Welsh and Northern Irish political discussion, with forums for International and EU Politics and member chosen topic areas">
+ <meta name="keywords" content="Politics, Political, Forum, UK, British, Scottish, Conservative, Labour, UKIP">
+ <meta name="author" content="Mii Choice">
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-5621612823489953",
+    enable_page_level_ads: true
+  });
+</script>
+
+<script type="text/javascript">
+<!--
+	lang.no_new_posts = "{$lang->no_new_posts}";
+	lang.click_mark_read = "{$lang->click_mark_read}";
+// -->
+</script>
+</head>
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZKDQLZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<?php include_once("analyticstracking.php") ?>
+
+{$header}
+
+<h3>UK political discussion forum for British, English, Scottish, Welsh and Northern Irish politics, with forums for International and EU Politics as well as member chosen topic areas</h3>
+
+{$forums}
+{$boardstats}
+
+<dl class="forum_legend smalltext">
+	<dt><span class="forum_status forum_on" title="{$lang->new_posts}"></span></dt>
+	<dd>{$lang->new_posts}</dd>
+
+	<dt><span class="forum_status forum_off" title="{$lang->no_new_posts}"></span></dt>
+	<dd>{$lang->no_new_posts}</dd>
+
+	<dt><span class="forum_status forum_offlock" title="{$lang->forum_locked}"></span></dt>
+	<dd>{$lang->forum_locked}</dd>
+
+	<dt><span class="forum_status forum_offlink" title="{$lang->forum_redirect}"></span></dt>
+	<dd>{$lang->forum_redirect}</dd>
+</dl>
+<br class="clear" />
+{$footer}
+</body>
+</html>
